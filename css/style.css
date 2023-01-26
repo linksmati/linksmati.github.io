@@ -1,0 +1,72 @@
+/* Estilos Generales*/
+body{
+    font-family:'Michroma', sans-serif;
+    background: linear-gradient(rgb(114, 85, 247), rgb(17, 0, 114) );
+    color: rgb(235, 235, 235);
+}
+/*Header*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    margin: 2rem auto;
+    gap: 1rem;
+}
+.foto{
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    box-shadow:  -0.4rem 0.09rem black;
+}
+.link{
+    font-size: 0.7rem;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    gap: 1rem;
+    margin: 0;
+}
+.icono{
+    width: 2rem;
+}
+/* Secction */
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+p{
+    text-align: center;
+    font-size: medium;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+}
+.btn{
+    background-color: white;
+    padding: 0.8rem 0.9rem;
+    border: solid 0.2rem black;
+    color: black;
+    box-shadow:  -0.4rem 0.4rem black;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    box-shadow:  -0.4rem 0.4rem white;
+}
+/* FOOTER */
+footer{
+    margin: 3rem;
+}
+footer p {
+    font-size: small;
+}

@@ -37,12 +37,12 @@ section{
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin: 0 2rem;
+    margin: 0 3.5rem;
 }
 
 p{
     text-align: center;
-    font-size: medium;
+    font-size: 1.1rem;
 }
 ul{
     display: flex;

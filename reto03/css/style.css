@@ -51,11 +51,11 @@ header h1{
     left: 100px;
 }
 /* Poop-Up */
-#pop_up{
+.pop_up{
     display: none;
-    margin: 10px auto;
+    margin: 10px 10px;
     border-radius: 15px;
-    color: #BDBDBD;;
+    color: #BDBDBD;
 }
 .contenedor--pop_up{
     display: flex;
@@ -146,4 +146,15 @@ form label{
 .pop-up__butttons--agregar{
     background-color: #FFEB3B;
     color: #212121;
+}
+
+
+/* FUNCIONALIDADES */
+
+/* POP UP */
+.pop_up.mostrar{
+    display: flex;
+}
+.main.esconder{
+    display: none;
 }

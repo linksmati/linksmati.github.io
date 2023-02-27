@@ -90,11 +90,12 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
   color: inherit;
 }
 
-/* Evitamos problemas con los pseudoelementos de quotes */
+/* Evitamos problemas con los pseudoelementos de quotes 
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
+*/
 
 /* Configuramos el texto que seleccionamos */
 /* ::-moz-selection {
@@ -122,12 +123,12 @@ blockquote:before, blockquote:after, q:before, q:after {
           appearance: none; 
 } */
 
-/* Reseteamos las tablas */
+/* Reseteamos las tablas 
 table, tr, td {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+*/
 /* Evitamos problemas con los SVG */
 /* svg {
   width: 100%;

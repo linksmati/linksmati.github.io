@@ -9,13 +9,3 @@ button.addEventListener('click', ()=>{
 
 
 
-
-// function popUp (){
-//     if(pop_up.style.opacity === 0){
-//         pop_up.style.opacity = 1;
-//         main__fondo.style.opacity = 0
-//     }else if(pop_up.style.opacity === 1){
-//         pop_up.style.opacity = 0;
-//         main__fondo.style.opacity = 1;
-//     }
-// }

@@ -5,9 +5,20 @@ body{
 }
 .contenedor{
     display: flex;
+    width: 100vw;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
+
+
+
+
+
+
+
+
 header{
     display: flex;
     align-items: center;
@@ -26,31 +37,13 @@ header h1{
     color: #333;
 }
 
-.main{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute; 
-}
-.main__fondo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    margin: 0 20px;
-}
-.main__fondo p{
-    font-weight: bold;
-    font-size: 2rem;
-    color: #757575;
-}
-#add_button{
-    position: relative;
-    top: 730px;
-    left: 100px;
-}
-/* Poop-Up */
+
+
+
+
+
+
+/* POOP-UP */
 .pop_up{
     display: none;
     margin: 10px 10px;
@@ -149,12 +142,49 @@ form label{
 }
 
 
+
+
+
+
+
+
+
+
+
+/* FONDO DE LA APLICACION  */
+
+
+.fondo__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 0 20px;
+}
+.fondo__contenedor p{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #757575;
+}
+.contenedorBoton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding:0 20px 20px 0;
+}
+
+
+
+
+
+
+
 /* FUNCIONALIDADES */
 
 /* POP UP */
 .pop_up.mostrar{
     display: flex;
 }
-.main.esconder{
+.fondo.esconder{
     display: none;
 }

@@ -1,11 +1,11 @@
 const button = document.getElementById('add_button')
 const pop_up = document.querySelector('.pop_up')
-const main = document.querySelector('.main')
+const fondo = document.querySelector('.fondo')
 
-button.addEventListener('click', ()=>{
-    pop_up.classList.add('mostrar')
+button.addEventListener('click', function(){
+    pop_up.classList.add('mostrar');
+    fondo.classList.add('esconder')
 })
-
 
 
 

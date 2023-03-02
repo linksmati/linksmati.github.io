@@ -12,5 +12,20 @@ button.addEventListener('click', function(){
     }
 })
 
+const contenedorCards = document.querySelector('.contenedorCards');
+console.log(contenedorCards);
+const agregarTarea = document.querySelector('#popupAgregar').addEventListener('click', ()=>{
+
+})
+
+
+
+const cancelarTarea = document.querySelector('#popupCancelar').addEventListener('click', ()=>{
+    pop_up.classList.remove('mostrar');
+})
+
+
+
+
 
 

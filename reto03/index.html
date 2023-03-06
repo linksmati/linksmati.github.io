@@ -26,30 +26,39 @@
         <div class="pop_up" >
             <div class="contenedor--pop_up">
                 <h2>Ingresa una tarea</h2>
-                <form action="">
+                <form id="formulario">
                     <label for="">Nombre de la tarea</label>
-                    <textarea class=" textarea textarea--nombre" name="" id=""></textarea>
+                        <input class=" textarea textarea--nombre" name="" id="nombreTarea">
                     <label for="">Tipo de tarea</label>
-                    <select name="Tipo de tarea" id="seleccionarTarea">
-                        <option value="Trabajo">Trabajo</option>
-                        <option value="Personal">Personal</option>
-                        <option value="Domestica">Domestica</option>
-                    </select>
+                        <select name="Tipo de tarea" id="seleccionarTarea">
+                            <option value="Trabajo">Trabajo</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Domestica">Domestica</option>
+                        </select>
                     <label for="">Descripción</label>
-                    <textarea class="textarea" name="" id=""></textarea>
-                </form>
-                <div class="prioridad">
-                    <p>Prioridad</p>
-                    <div class="colores">
-                        <div class="color color--verde"></div>
-                        <div class="color color--naranja"></div>
-                        <div class="color color--rojo"></div>
+                        <input class="textarea" name="" id="descripcionTarea"></input>
+                    <div class="prioridad">
+                        <p>Prioridad</p>
+                        <div class="colores">
+                            <div class="color">
+                                <input class="color--verde" type="checkbox">
+                                <p class="color--verde">+</p>
+                            </div>
+                            <div class="color">
+                                <input class="color--naranja" type="checkbox">
+                                <p class="color--naranja">++</p>
+                            </div>
+                            <div class="color">
+                                <input class="color--rojo" type="checkbox">
+                                <p class="color--rojo">+++</p>
+                            </div>
+                        </div>
+                    </div> <!--prioridad -->
+                    <div class="pop-up__butttons">
+                        <button id="popupCancelar">Cancelar</button>
+                        <button type="submit" id="popupAgregar" class="pop-up__butttons--agregar" href="">Agregar</button>
                     </div>
-                </div> <!--prioridad -->
-                <div class="pop-up__butttons">
-                    <button id="popupCancelar" href="">Cancelar</button>
-                    <button id="popupAgregar" class="pop-up__butttons--agregar" href="">Agregar</button>
-                </div>
+                </form>
             </div>
         </div>
 
@@ -71,13 +80,14 @@
                     <line x1="5" y1="12" x2="19" y2="12" />
                 </svg>
         </div>
+
+
         <div class="contenedorCards">
 
+
         </div>
+    </div> <!-- .contenedor-->
 
-
-
-    </div>
-    <script src="/reto03/js/add__button.js"></script>
+    <script src="/reto03/js/main.js"></script>
 </body>
 </html>

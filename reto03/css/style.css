@@ -131,7 +131,7 @@ form label{
     margin: 0 auto;
 }
 .color--verde{
-color: green;
+    color: green;
 }
 .color--naranja{
 color:  orange;
@@ -197,20 +197,38 @@ color:  orange;
 }
 .card{
     display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 10px 20px;
-    border: solid 1px #FFEB3B;
+    align-items: center;
+    gap: 5px;
+    width: 380px;
+    padding: 5px 5px;
+    border: solid 1px #fffff3;
     border-radius: 15px;
     color: #fffff3;
 }
-.card__contenido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.tipodetarea{
+    flex-grow: 1;
 }
-
-
+.tipodetarea img{
+    width: 25px;
+    margin: 0 auto;
+}
+.nombredelatarea{
+    flex-grow: 3;
+}
+.completada{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.completada input{
+    width: 20px;
+    height: 20px;
+}
+.completada  button{
+    width: 30px;
+    height: 30px;
+}
 /* FUNCIONALIDADES */
 
 /* POP UP */
@@ -222,4 +240,14 @@ color:  orange;
 }
 .contenedorCards.esconder{
     display: none;
+}
+
+.prioridad1{
+    border: solid 1px green;
+}
+.prioridad2{
+    border-color: orange;    
+}
+.prioridad3{
+    border-color: red;    
 }

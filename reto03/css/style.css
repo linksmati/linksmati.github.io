@@ -220,3 +220,6 @@ color:  orange;
 .fondo.esconder{
     display: none;
 }
+.contenedorCards.esconder{
+    display: none;
+}

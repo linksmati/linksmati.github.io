@@ -4,19 +4,25 @@ const fondo = document.querySelector('.fondo')
 // CREACION DEL HTML
 const contenedorCards = document.querySelector('.contenedorCards');
 let tareas = function (prioridad, imagenTarea, nombreTarea) {
-    contenedorCards.innerHTML += 
-    `<div class="card ${prioridad}">
-        <div class="tipodetarea">
-            <img src="${imagenTarea}" alt="">
-        </div>
-        <div class="nombredelatarea">
-            <p>${nombreTarea}<p>
-        </div>
-        <div class="completada">
-            <input class="listoBorrar" type="checkbox">
-            <button><img src="/reto03/assets/icons/delete.svg" alt=""></button>
-        </div>
-    </div>`
+    let tarea =     `<div class="card ${prioridad}">
+    <div class="tipodetarea">
+        <img src="${imagenTarea}" alt="">
+    </div>
+    <div class="nombredelatarea">
+        <p>${nombreTarea}<p>
+    </div>
+    <div class="completada">
+        <input class="listoBorrar" type="checkbox">
+        <button><img src="/reto03/assets/icons/delete.svg" alt=""></button>
+    </div>
+</div>`
+    contenedorCards.innerHTML += tarea
+
+    localStorage.setItem('listadoTareas', contenedorCards)
+    let desdeStorage = localStorage.getItem("contenedorCards")
+    if(desdeStorage){
+        contenedorCards.innerHTML += desdeStorage
+    }
 }
 
 
@@ -79,6 +85,7 @@ formulario.addEventListener('submit', (e) =>{
     tareas(prioridad, imagenTarea, nombreTarea)
 })
 
+// LOCAL STORAGE
 
 
 

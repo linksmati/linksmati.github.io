@@ -1,0 +1,54 @@
+/* 
+    pp = página principal
+ */
+.pp__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    background-color:#fffff3;
+    color: #333;
+}
+.pp__logo{
+    margin: 0 auto;
+}
+.pp__players{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 100vw;
+}
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.player input{
+    width: 300px;
+    height: 50px;
+    background-color: aquamarine;
+    border-radius: 35px;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.pp__btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pp__btn a{
+    width: 300px;
+    height: 50px;
+    background-color: aquamarine;
+    border-radius: 35px;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+}

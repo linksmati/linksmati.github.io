@@ -1,12 +1,12 @@
 /* 
     pp = página principal
     pc = página de cartas
+    popup = pop-up
  */
-html{
+body{
     font-family: 'Blinker', sans-serif;
     font-size: 1rem;
-    background: #333;
-    color: #fffff3;
+    background-color: #333;
 }
 .pp__contenedor{
     display: flex;
@@ -15,6 +15,8 @@ html{
     justify-content: space-around;
     height: 100vh;
     width: 100vw;
+    background: #333;
+    color: #fffff3;
 }
 .pp__logo{
     margin: 0 auto;
@@ -50,7 +52,7 @@ html{
     align-items: center;
     
 }
-.pp__btn a{
+.pp__btn button{
     width: 300px;
     height: 50px;
     background-color: aquamarine;
@@ -65,10 +67,10 @@ html{
 
 
 
-/* Página de cartas */
+/* Página de carga */
 
 .pc__loading{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     background: #333;
@@ -76,15 +78,19 @@ html{
     height: 100vh;
 }
 .pc__loading img{
-    width: 75px;
+    width: 150px;
 }
+
+/* Página de cartas */
+
 .pc__contenedor{
     display: none;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     width: 100vw;
+    height: 100vh;
     background: #333;
     color: #fffff3;
 }
@@ -118,12 +124,22 @@ html{
     padding: 0 30px;
     text-align: center;
 }
+/* Pop-Up */
 
-/* FUNCIONALIDADES */
-
-.esconderPantalla{
+.popup{
     display: none;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 50px auto 0;
+    padding: 80px;
+    border: solid 1px #fffff3;
+    border-radius: 15px;
+    background-color: #333;
 }
-.mostrarPantalla{
-    display: flex;
+.popup button{
+    padding: 30px;
+    border-radius: 15px;
+    background: #d1d112;
+    color: #333;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import "../assets/css/ItemCarrito.css";
 import Borrar from "../assets/statics/borrar.png"
 export default function ItemCarrito (props){
+    console.log("props",props);
     const {nombre,precio,img, id} = props;
     const handleBorrar = ()=>{
         props.eliminarCarrito(id)

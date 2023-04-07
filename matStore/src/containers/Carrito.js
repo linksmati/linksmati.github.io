@@ -3,21 +3,22 @@ import "../assets/css/Carrito.css"
 import ItemCarrito from "../components/ItemCarrito";
 import Contexto from "../context/Contexto";
 export default function Carrito (){
-    const {carrito, eliminarCarrito} = useContext(Contexto);
+    const {carrito} = useContext(Contexto);
+    console.log("carrito",carrito);
     return(
         <>
             <div className="carrito">
                 <div className="carrito-listadito">
                     
                     {
-                    carrito.map((item, i)=>{
+                    carrito.map((item, i)=>(
                         <ItemCarrito 
                             {...item} 
                             key={i} 
-                            eliminarCarrito={eliminarCarrito}
+                            // eliminarCarrito={eliminarCarrito}
                         >
                         </ItemCarrito>  
-                    })
+                    ))
                     } 
                 </div>
 

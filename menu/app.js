@@ -5,7 +5,7 @@ console.log(listadoPizzas);
 document.addEventListener('DOMContentLoaded', llamarDatos)
 // FUNCIONES
 function llamarDatos () {
-    fetch('/datos/menu.json')
+    fetch('/menu/datos/menu.json')
         .then(rta=> rta.json())
         .then(res => imprimirContenido(res) )
 }

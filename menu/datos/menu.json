@@ -1,76 +1,92 @@
 {
-"platillos": [
+"Pizzas": [
     {
     "id": 1,
-    "nombre": "Pizza a la Piedra Chica",
-    "precio": 30,
-    "categoria": 1
+    "nombre": "Muzzarella",
+    "descripcion": "Salsa de tomate y muzzarella.",
+    "precio": 2300,
+    "categoria": "Pizzas"
     },
     {
     "id": 2,
-    "nombre": "Pizza a la Piedra Mediana",
-    "precio": 50,
-    "categoria": 1
+    "nombre": "Napolitana",
+    "descripcion": "Salsa de tomate, muzzarella y tomate natural.",
+    "precio": 2500,
+    "categoria": "Pizzas"
+    },
+    {
+    "id": 12 ,
+    "nombre": "Especial",
+    "descripcion": "Salsa de tomate, muzzarella y jamón cocido y morrones.",
+    "precio": 2600,
+    "categoria": "Pizzas"
     },
     {
     "id": 3,
-    "nombre": "Rebanada de Pay de Limón",
-    "precio": 30,
-    "categoria": 3
+    "nombre": "Especial a la Napolitana",
+    "descripcion": "Salsa de tomate, muzzarella, jamón cocido, tomates en rodajas y salsa golf.",
+    "precio": 2800,
+    "categoria": "Pizzas"
     },
     {
     "id": 4,
-    "nombre": "Rebanada de Pastel de Chocolate",
-    "precio": 30,
-    "categoria": 3
+    "nombre": "Fugazzeta",
+    "descripcion": "Muzzarella y cebolla.",
+    "precio": 2700,
+    "categoria": "Pizzas"
     },
     {
     "id": 5,
-    "nombre": "Jugo de Naranja",
-    "precio": 15,
-    "categoria": 2
+    "nombre": "Palmitos",
+    "descripcion": "Salsa de tomate, muzzarella, jamón cocido, palmitos y salsa golf.",
+    "precio": 3000,
+    "categoria": "Pizzas"
     },
     {
     "id": 6,
-    "nombre": "Pizza a la Leña Grande",
-    "precio": 70,
-    "categoria": 1
+    "nombre": "4 Quesos",
+    "descripcion": " Muzzarella, parmesano, provolone y roquefort.",
+    "precio": 3000,
+    "categoria": "Pizzas"
     },
     {
     "id": 7,
-    "nombre": "Rib Eye 800g",
-    "precio": 100,
-    "categoria": 1
+    "nombre": "Rúcula",
+    "descripcion":"Salsa de tomate, muzzarella, rúcula, morrones, aceitunas negras.",
+    "precio": 2800,
+    "categoria": "Pizzas"
     },
     {
     "id": 8,
-    "nombre": "Jugo de Naranja",
-    "precio": 15,
-    "categoria": 2
+    "nombre": "Napolitana c/palta",
+    "descripcion": "Salsa de tomate y muzzarella, tomates en rodajas y palta.",
+    "precio": 3100,
+    "categoria": "Pizzas"
     },
     {
     "id": 9,
-    "nombre": "Tequila",
-    "precio": 40,
-    "categoria": 2
+    "nombre": "Ananá",
+    "descripcion": "Muzzarella, jamón cocido y ananá.",
+    "precio": 3000,
+    "categoria": "Pizzas"
     },
     {
     "id": 10,
-    "nombre": "Rebanada de Pay de Queso",
-    "precio": 30,
-    "categoria": 3
+    "nombre": "Rúcula c/jamón crudo",
+    "descripcion": "Salsa de tomate, muzzarella, jamón crudo y rúcula.",
+    "precio": 3300,
+    "categoria": "Pizzas"
     },
     {
     "id": 11,
-    "nombre": "Café Americano",
-    "precio": 20,
-    "categoria": 2
-    },
-    {
-    "id": 12,
-    "nombre": "Café Capuchino",
-    "precio": 40,
-    "categoria": 2
+    "nombre": "Turca",
+    "descripcion": "Salsa de tomate, muzzarella, tomates y ajo.",
+    "precio": 3100,
+    "categoria": "Pizzas"
     }
 ]
 }
+
+
+
+

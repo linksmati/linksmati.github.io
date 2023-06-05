@@ -31,14 +31,17 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px 5px 5px 5px;
+    max-width: 90%;
+    margin-top: 50px;
     color: #fffff3;
 }
+
 .categoria{
     font-family: 'Cormorant Garamond', serif;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 5px;
+    padding-bottom: 30px;
 
 }
 .elemento{
@@ -64,7 +67,7 @@ header{
 .elemento__precio{
     font-family: 'Tenor Sans';
     font-size: 17px;
-    
+    padding-top: 5px;
     width: 80%;
     text-align: right;
 }

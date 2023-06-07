@@ -25,13 +25,14 @@ header{
     padding-bottom: 5px;
     width: 80%;
     height: 5px;
+    margin: auto;
 }
 .listado{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 90%;
+    padding: 0 25px;
     margin-top: 50px;
     color: #fffff3;
 }
@@ -54,20 +55,20 @@ header{
 }
 .elemento__nombre{
     font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
+    font-size: 25px;
     letter-spacing: 2px;
     font-weight: bold;
 }
 .elemento__descripcion{
     font-family: 'Tenor Sans';
     font-size: 15px;
-    padding: 5px 0 0 5px;
+    padding: 5px 0 0 10px;
     letter-spacing: 1px;
 }
 .elemento__precio{
     font-family: 'Tenor Sans';
     font-size: 17px;
-    padding-top: 5px;
+    padding-top: 10px;
     width: 80%;
     text-align: right;
 }
@@ -81,4 +82,41 @@ footer p{
     font-family: 'Tenor Sans';
     font-size: 10px;
     color: #fffff3;
+}
+
+
+/* ----------------------------------- */
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    color: #fffff3;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 50px 0 ;
+}
+.presentacion h2{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.presentacion a{
+    font-size: 30px;
+    border: solid 1px #B29E84;
+    color: #B29E84;
+    padding: 5px 10px;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #fffff3;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 20px 0;
+}
+.contacto .bold{
+ font-weight: bold;
 }

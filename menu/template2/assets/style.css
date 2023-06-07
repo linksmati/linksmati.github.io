@@ -1,0 +1,82 @@
+body{
+    background-color: #fffff3;
+    color: #333;
+
+ 
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100vw;
+    height: 100vh;
+}
+.imagen{
+    width: 100%;
+    background-image: url(../assets/statics/plato.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin:30px 0 0 30px;
+}
+header h1{
+    font-size: 15px;
+    font-family: 'Coustard', serif;
+}
+header p{
+    font-size: 80px;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: 6px;
+    
+}
+.line{
+    margin: auto;
+    width: 85%;
+    border-bottom: solid 1px #333;
+}
+.listado{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin:30px 0 0 30px;
+}
+.listado .categoria{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 30px;
+    letter-spacing: 7px;
+}
+.listado__pizzas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+}
+.elemento{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+    padding-top: 10px;
+    font-family: 'Coustard', serif;
+
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+footer p{
+    font-family: 'Tenor Sans';
+    font-size: 10px;
+    color: #333;
+}

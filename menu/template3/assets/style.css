@@ -1,0 +1,69 @@
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #fffff3;
+    background-image: url(/menu/template3/assets/statics/fondo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 30px 10px 10px;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+header{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+header h1{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    padding-left: 40px;
+    line-height: 45px;
+}
+.red{
+    color: red;
+    font-size: 60px;
+}
+header img{
+    margin: auto;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap:20px;
+    width: 85%
+}
+.elemento{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding-bottom: 10px;
+}
+.elemento__nombre{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.elemento__precio{
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+footer p{
+    font-family: 'Tenor Sans';
+    font-size: 10px;
+    color: #fffff3;
+}

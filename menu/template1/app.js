@@ -1,8 +1,12 @@
 // VARIABLES
 const listadoPizzas = document.querySelector('.listado__pizzas');
-console.log(listadoPizzas);
+const menuBtn = document.querySelector('#menuBtn');
+const menuClose = document.querySelector('#menuClose');
+const sideBar = document.querySelector('.sideBar');
 // EVENTOS
 document.addEventListener('DOMContentLoaded', llamarDatos)
+menuBtn.addEventListener('click', sideBarOpen)
+menuClose.addEventListener('click', sideBarClose)
 // FUNCIONES
 function llamarDatos () {
     fetch('/menu/datos/menu.json')
@@ -21,4 +25,18 @@ function imprimirContenido(res){
         `;
         listadoPizzas.innerHTML += html
     })
+}
+
+function sideBarOpen(e){
+    e.preventDefault()
+    if(sideBar.classList =='sideBar'){
+        sideBar.classList.add('active')
+    }
+    
+}
+function sideBarClose(e){
+    e.preventDefault()
+    if(sideBar.classList =='sideBar active'){
+        sideBar.classList.remove('active')
+    }
 }

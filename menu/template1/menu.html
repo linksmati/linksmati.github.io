@@ -21,20 +21,21 @@
 </head>
 <body>
     <header>
-        <div class="header__nav">
-            <div class="sideBar">
-                <div class="sideBar__nav">
-                    <h3>Categorias</h3>
-                    <a id="menuClose" href=""><img src="/menu/template1/assets/statics/close.svg" alt=""></a>
-                </div>
-                <ul class="sideBar__lista">
-                    <li class="sideBar__elemento">Pizzas</li>
-                    <li class="sideBar__elemento">Pastas</li>
-                    <li class="sideBar__elemento">Carnes</li>
-                    <li class="sideBar__elemento">Bebidas</li>
-                    <li class="sideBar__elemento">Tragos</li>
-                </ul>
+        <div class="sideBar">
+            <div class="sideBar__nav">
+                <h3>Categorias</h3>
+                <button id="menuClose" href=""><img src="/menu/template1/assets/statics/close.svg" alt=""></button>
             </div>
+            <ul class="sideBar__lista">
+                <a onclick="sideBarClose()" href="#Pizzas"><li class="sideBar__elemento">Pizzas</li></a>
+                <a  onclick="sideBarClose()" href="#Pastas" href=""><li class="sideBar__elemento">Pastas</li></a>
+                <a onclick="sideBarClose()" href="#Carnes"><li class="sideBar__elemento">Carnes</li></a>
+                <a onclick="sideBarClose()" href="#Bebidas"><li class="sideBar__elemento">Bebidas</li></a>
+                <a onclick="sideBarClose()" href="#Tragos"><li class="sideBar__elemento">Tragos</li></a>
+                <a onclick="sideBarClose()" href="#Cafeteria"><li class="sideBar__elemento">Cafetería</li></a>
+            </ul>
+        </div>
+        <div class="header__nav">
             <div class="nav__btn">
                 <a id="menuBtn"><img src="/menu/template1/assets/statics/menu.svg" alt=""></a>
             </div>
@@ -42,14 +43,27 @@
                 <img src="/menu/template1/assets/statics/logo.svg" alt="">
             </div>
         </div>
-        <h1 class="header__title">Menu</Menu></h1>
+        
     </header>
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="listado">
-        <h2 class="categoria">Pizzas</h2>
-        <div class="listado__pizzas"></div>
-    </div> <!--listado-->
+    <main>
+        <h1 class="header__titulo">Menu</Menu></h1>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="listado__menu">
+            <h2  id="Pizzas" class="categoria">Pizzas</h2>
+            <div class="listado__pizzas"></div>
+            <h2 id="Pastas" class="categoria">Pastas</h2>
+            <div class="listado__pastas"></div>
+            <h2 id="Carnes" class="categoria">Carnes</h2>
+            <div class="listado__carnes"></div>
+            <h2 id="Bebidas" class="categoria">Bebidas</h2>
+            <div class="listado__bebidas"></div>
+            <h2 id="Tragos" class="categoria">Tragos</h2>
+            <div class="listado__tragos"></div>
+            <h2 id="Cafeteria" class="categoria">Cafetería</h2>
+            <div class="listado__cafeteria"></div>
+        </div> 
+    </main>
     <footer>
         <p>Powered by @SaltaLabs</p>
     </footer>

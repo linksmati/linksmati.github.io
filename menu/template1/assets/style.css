@@ -8,21 +8,31 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 20px;
 }
 .header__nav{
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    background-color: #253439;
+    border-top: #B29E84 solid 5px;
+    border-left: #B29E84 solid 5px;
+    border-right: #B29E84 solid 5px;
+    z-index: 1;
+    transition: 300ms;
 }
 .nav__btn{
-    margin-top: 50px;
-    
+    border: #B29E84 solid 1px;
+    border-radius: 2px;
 }
 .nav__logo{
-    width: 250px;
+    width: 100px;
 }
-
+/* -------------------------------------------------------- */
 .sideBar{
     background-color: #B29E84;
     width: 250px;
@@ -35,11 +45,12 @@ header{
     top: 0;
     left: -100%;
     transition: 850ms;
+    z-index: 2;
 }
 .sideBar__nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: 30px;
     margin-top: 60px;
 }
@@ -49,6 +60,9 @@ header{
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: bold;
+}
+.sideBar__nav button{
+    background-color: #B29E84;
 }
 .sideBar__lista{
     width: 200px;
@@ -61,20 +75,26 @@ header{
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 1px;
-
 }
-/* -------------------------------------------------------- */
+
 .active {
     left: 0%;
     transition: 350ms;
 }
 /* -------------------------------------------------------- */
-.header__title{
+.header__titulo{
+    margin: auto;
     font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
     font-size: 80px;
     color: #fffff3;
-    
+}
+main{
+    margin-top: 70px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .line{
     border-bottom: solid 1px #B29E84;
@@ -83,13 +103,12 @@ header{
     height: 5px;
     margin: auto;
 }
-.listado{
+.listado__menu{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 25px;
-    margin-top: 50px;
     color: #fffff3;
 }
 
@@ -98,7 +117,7 @@ header{
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 5px;
-    padding-bottom: 30px;
+    padding: 80px 0 15px;
 
 }
 .elemento{
@@ -106,7 +125,7 @@ header{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    padding: 0 0 25px 10px;
+    padding: 0 0 0 10px;
 
 }
 .elemento__nombre{
@@ -132,7 +151,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 10px;
+    padding: 80px 0 10px;
 }
 footer p{
     font-family: 'Tenor Sans';
